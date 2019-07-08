@@ -47,7 +47,7 @@ router.put('/', function (req, res) {
 });
 
 router.delete('/', function (req, res) {
-    
+    //Teste para commit
     var username = req.params.username;
     User.deleteOne({username: username}, function(err){
         if(err) throw err; 
